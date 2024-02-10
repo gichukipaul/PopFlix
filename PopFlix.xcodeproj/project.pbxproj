@@ -14,6 +14,11 @@
 		CE0CFFD92B781C3300B8C248 /* PopFlixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CFFD82B781C3300B8C248 /* PopFlixTests.swift */; };
 		CE0CFFE32B781C3300B8C248 /* PopFlixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CFFE22B781C3300B8C248 /* PopFlixUITests.swift */; };
 		CE0CFFE52B781C3300B8C248 /* PopFlixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CFFE42B781C3300B8C248 /* PopFlixUITestsLaunchTests.swift */; };
+		CE40165C2B7827740072C2DD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE40165B2B7827740072C2DD /* HomeView.swift */; };
+		CE40165E2B7837950072C2DD /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE40165D2B7837950072C2DD /* SearchView.swift */; };
+		CE4016602B7837AD0072C2DD /* WatchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE40165F2B7837AD0072C2DD /* WatchListView.swift */; };
+		CE4016632B783D440072C2DD /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4016622B783D440072C2DD /* MovieDetailsView.swift */; };
+		CE4016662B783DAF0072C2DD /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4016652B783DAF0072C2DD /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		CE0CFFDE2B781C3300B8C248 /* PopFlixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopFlixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0CFFE22B781C3300B8C248 /* PopFlixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopFlixUITests.swift; sourceTree = "<group>"; };
 		CE0CFFE42B781C3300B8C248 /* PopFlixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopFlixUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE40165B2B7827740072C2DD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CE40165D2B7837950072C2DD /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		CE40165F2B7837AD0072C2DD /* WatchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListView.swift; sourceTree = "<group>"; };
+		CE4016622B783D440072C2DD /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
+		CE4016652B783DAF0072C2DD /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +104,10 @@
 		CE0CFFC62B781C2E00B8C248 /* PopFlix */ = {
 			isa = PBXGroup;
 			children = (
-				CE0CFFC72B781C2E00B8C248 /* PopFlixApp.swift */,
-				CE0CFFC92B781C2E00B8C248 /* ContentView.swift */,
-				CE0CFFCB2B781C3300B8C248 /* Assets.xcassets */,
+				CE40165A2B7821CF0072C2DD /* Core */,
+				CE4016592B7821BB0072C2DD /* Models */,
+				CE4016582B7821AC0072C2DD /* ViewModels */,
+				CE4016572B7821A00072C2DD /* Views */,
 				CE0CFFCD2B781C3300B8C248 /* Preview Content */,
 			);
 			path = PopFlix;
@@ -125,6 +136,58 @@
 				CE0CFFE42B781C3300B8C248 /* PopFlixUITestsLaunchTests.swift */,
 			);
 			path = PopFlixUITests;
+			sourceTree = "<group>";
+		};
+		CE4016572B7821A00072C2DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE4016672B783E7A0072C2DD /* Components */,
+				CE4016612B783D080072C2DD /* MainViews */,
+				CE4016622B783D440072C2DD /* MovieDetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE4016582B7821AC0072C2DD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CE4016592B7821BB0072C2DD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE40165A2B7821CF0072C2DD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CE0CFFCB2B781C3300B8C248 /* Assets.xcassets */,
+				CE0CFFC72B781C2E00B8C248 /* PopFlixApp.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CE4016612B783D080072C2DD /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				CE0CFFC92B781C2E00B8C248 /* ContentView.swift */,
+				CE40165B2B7827740072C2DD /* HomeView.swift */,
+				CE40165D2B7837950072C2DD /* SearchView.swift */,
+				CE40165F2B7837AD0072C2DD /* WatchListView.swift */,
+				CE4016652B783DAF0072C2DD /* MainTabView.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		CE4016672B783E7A0072C2DD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +320,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4016632B783D440072C2DD /* MovieDetailsView.swift in Sources */,
+				CE40165E2B7837950072C2DD /* SearchView.swift in Sources */,
 				CE0CFFCA2B781C2E00B8C248 /* ContentView.swift in Sources */,
+				CE40165C2B7827740072C2DD /* HomeView.swift in Sources */,
+				CE4016662B783DAF0072C2DD /* MainTabView.swift in Sources */,
+				CE4016602B7837AD0072C2DD /* WatchListView.swift in Sources */,
 				CE0CFFC82B781C2E00B8C248 /* PopFlixApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

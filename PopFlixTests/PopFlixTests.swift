@@ -2,7 +2,7 @@
 //  PopFlixTests.swift
 //  PopFlixTests
 //
-//  Created by user on 11/02/2024.
+//  Created by Gichuki on 11/02/2024.
 //
 
 import XCTest
