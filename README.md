@@ -29,6 +29,28 @@ We are continuously working on enhancing PopFlix. Stay tuned for upcoming featur
 
 
 ## Getting Started
+### 1. Clone the Repository:
+
+```bash
+git clone https://github.com/your-username/PopFlix.git
+
+```
+### 2. Replace TMDB API Key:
+- Obtain your API key from TMDB (The Movie Database).
+- In the Xcode project, locate the Constants.swift file.
+- Replace the placeholder for the TMDB API key with your own key:
+
+```swift
+struct API {
+    static let tmdbApiKey = "YOUR_API_KEY_HERE"
+}
+
+```
+
+### 3. Run the Project:
+- Open the PopFlix.xcodeproj file with Xcode.
+- Build and run the project on your preferred iOS simulator or device.
+- Ensure that you have Xcode installed and configured on your machine. If you encounter any issues or have questions, refer to the project documentation or feel free to reach out for assistance.
 
 ## Contributing
 
@@ -37,3 +59,5 @@ Contributions to PopFlix are welcome! If you find a bug, have a feature request,
 ## Acknowledgments
 
 We would like to express our gratitude to the TMDB, and all contributors who have played a role in making PopFlix possible.
+- Figma Design Credit: The design elements and visual aesthetics of PopFlix are based on the incredible work by Francisco Santos, whose design can be found on Figma: [Francisco Santos](https://www.figma.com/community/file/1124835379376527920).
+

@@ -9,12 +9,13 @@ import SwiftUI
 
 struct SearchView: View {
     var body: some View {
-        ZStack {
-            Rectangle()
-                .fill(Color("background"))
-                .ignoresSafeArea()
-            Text("Hello World, From SSearch")
-        }
+//        ZStack {
+//            Rectangle()
+//                .fill(Color("background"))
+//                .ignoresSafeArea()
+//            Text("Hello World, From SSearch")
+//        }
+        MovieDetailsView()
     }
 }
 

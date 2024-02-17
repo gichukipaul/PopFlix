@@ -13,7 +13,33 @@ struct WatchListView: View {
             Rectangle()
                 .fill(Color("background"))
                 .ignoresSafeArea()
-        Text("Hello, World!, From WatchList")
+            
+            VStack {
+                HStack {
+                    Image(systemName: "chevron.left")
+                        .font(.headline)
+                        .foregroundStyle(.white)
+                    
+                    Spacer()
+                    
+                    Text("WatchList")
+                        .font(.system(.headline))
+                        .foregroundStyle(.white)
+                    
+                    Spacer()
+                    
+                    Image(systemName: "rosette")
+                        .font(.headline)
+                        .foregroundStyle(.white)
+                }
+                .padding()
+                
+                List(0 ..< 10) { item in
+                    WatchListItem()
+                        .listRowBackground(Color("background"))
+                }
+                .listStyle(.plain)
+            }
         }
     }
 }
