@@ -32,7 +32,7 @@ We are continuously working on enhancing PopFlix. Stay tuned for upcoming featur
 ### 1. Clone the Repository:
 
 ```bash
-git clone https://github.com/your-username/PopFlix.git
+git clone git@github.com:gichukipaul/PopFlix.git
 
 ```
 ### 2. Replace TMDB API Key:
