@@ -2,7 +2,7 @@
 //  MovieDetailsView.swift
 //  PopFlix
 //
-//  Created by user on 15/02/2024.
+//  Created by Gichuki on 15/02/2024.
 //
 
 import SwiftUI
@@ -18,23 +18,22 @@ struct MovieDetailsView: View {
                 // TOPBAR
                 HStack {
                     Image(systemName: "chevron.left")
-                        .font(.largeTitle)
+                        .font(.headline)
                         .foregroundStyle(.white)
                     
                     Spacer()
                     
                     Text("Details")
-                        .font(.system(.title))
+                        .font(.system(.headline))
                         .foregroundStyle(.white)
                     
                     Spacer()
                     
-                    Image(systemName: "bookmark.fill")
-                        .font(.largeTitle)
+                    Image(systemName: "rosette")
+                        .font(.headline)
                         .foregroundStyle(.white)
                 }
                 .padding()
-//                .padding(.bottom, 15)
                 
                     // BACKGROUND POSTER
                 ZStack(alignment: .bottomTrailing) {
@@ -55,7 +54,7 @@ struct MovieDetailsView: View {
                         Image(systemName: "star")
                         Text("9.6")
                     }
-                    .font(.title3)
+                    .font(.headline)
                     .foregroundColor(Color(.systemOrange))
                     .padding()
                     
@@ -84,6 +83,55 @@ struct MovieDetailsView: View {
                         .padding(.bottom, 8)
                    
                 }
+                .padding(.top, -60)
+                
+                HStack {
+                    HStack {
+                        Image(systemName: "calendar")
+                            
+                        Text("2021")
+                            
+                        Text("|")
+                            .fontWeight(.bold)
+                    }
+                    
+                    HStack {
+                        Image(systemName: "clock")
+                        
+                        Text("148 Minutes")
+                        
+                        Text("|")
+                            .fontWeight(.bold)
+                    }
+                    
+                    HStack {
+                        Image(systemName: "ticket")
+                        
+                        Text("Action")
+                    }
+                    
+                }
+                .font(.custom("Poppins", size: 12))
+                .foregroundStyle(.white)
+                .opacity(0.7)
+                .padding()
+                
+                HStack {
+                    Text("About Movie")
+                    
+                    Text("Reviews")
+                    
+                    Text("Cast")
+                }
+                .padding()
+                
+                VStack {
+                    Text("LOOOOOONG TEXT GOES HERE")
+                    
+                }
+                .padding()
+                
+                Spacer()
             }
         }
     }
