@@ -1,7 +1,5 @@
 # P O P F L I X
 
-## UI Overview
-PopFlix features a sleek and intuitive user interface, designed to provide users with a seamless and enjoyable experience while exploring and discovering movies.
 ## Overview
 PopFlix is a Swift iOS app that leverages the power of Swift, and SwiftData for offline support, and multithreading using async/await. Following the MVVM (Model-View-ViewModel) architecture and adhering to SOLID principles, PopFlix is not just an app but a showcase of best practices in iOS development.
 ## Technologies Used
