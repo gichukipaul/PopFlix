@@ -21,10 +21,10 @@ We are continuously working on enhancing PopFlix. Stay tuned for upcoming featur
 ``` bash
 git clone git@github.com:gichukipaul/PopFlix.git
 ```
-### 2. Replace TMDB API Key:
+### 2. Replace the TMDB API Key:
 - Obtain your API key from TMDB (The Movie Database).
 - In the Xcode project, locate the Constants.swift file.
-- Replace the placeholder for the TMDB API key with your own key:
+- Replace the placeholder for the TMDB API key with your key:
 
 ```Swift
 struct API {
@@ -35,7 +35,7 @@ struct API {
 ### 3. Run the Project:
 - Open the PopFlix.xcodeproj file with Xcode.
 - Build and run the project on your preferred iOS simulator or device.
-- Ensure that you have Xcode installed and configured on your machine. If you happen to have any issues or have questions, please refer to the project documentation or feel free to reach out for help.
+- Ensure that you have Xcode installed and configured on your machine. If you happen to have any issues or questions, please refer to the project documentation or feel free to reach out for help.
 ## Contributing
 Contributions to PopFlix are welcome! If you find a bug, have a feature request, or want to contribute in any way, please follow our [contribution guidelines](CONTRIBUTING.md).
 ## Acknowledgments
